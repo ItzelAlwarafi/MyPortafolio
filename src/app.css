@@ -24,7 +24,7 @@ font-size: xx-large;
 .welcome-page-container {
     position: relative; 
     margin-top: 5%;
-    background-image: url('src/assets/20181006_210628.jpg') ; 
+    background-image: url('src/assets/welcomeImage.jpg');
     background-size: cover; 
     background-position: center;
     display: flex;
