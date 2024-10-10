@@ -1,10 +1,10 @@
 body {
-    background-color: #010211;
+    background: radial-gradient(ellipse at bottom, #010211 0%, #010211 100%);
     margin: 0; /*  no default margin */
 }
 
 .AppContainer {
-    
+   
     display: flex;
     width: 100%;
     justify-content: center;

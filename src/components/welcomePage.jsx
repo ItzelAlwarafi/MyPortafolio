@@ -1,11 +1,9 @@
-import welcomeImage from '../assets/welcomeImage.jpg'
+
 
 export default function WelcomePage() {
     return (
         <div
-            className="welcome-page-container"
-            style={{ backgroundImage: `url(${welcomeImage})` }} 
-        >
+            className="welcome-page-container">
             <div className="intro-message">
                 <h2 className="regular-font-group">Hello, my name is</h2>
                 <h1 className="bold-font-group">ITZEL ALWARAFI</h1>

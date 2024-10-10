@@ -15,8 +15,10 @@ export default function LandingPage () {
             <div className='sideBar'>
                 <SideBar/>
              </div> 
-        <div className='AppContentContainer'>
+             <div className='pagecontainerbox'> 
 
+        <div className='AppContentContainer'>
+           
             <div className='welcomePage'>
                 <WelcomePage />
             </div>
@@ -29,6 +31,7 @@ export default function LandingPage () {
             <div className='projectsContainer'>
                 <Projects/>
             </div>
+        </div>
         </div>
         <div className='footer'>
             <Footer/>
