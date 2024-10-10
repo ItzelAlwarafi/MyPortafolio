@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  background-color: #010211;
+  background-color: hsl(236, 89%, 4%);
 }
 .sideBar-Link-container {
     position: fixed;
@@ -41,6 +41,7 @@ font-size: xx-large;
     align-content: center;
     align-self: center;
     align-items: center;
+    margin-top: 10%;
    
     
 }
@@ -62,33 +63,43 @@ font-size: xx-large;
     z-index: 1; /* Keep text elements above the overlay */
 }
 
-.intro-message h2, .intro-message h1 {
-    margin: 0; 
-    padding: 0; 
+.intro-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
 }
 
-.intro-message h2 {
-    margin-bottom: 5px; 
-}
 
+.regular-font-hello{
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+  margin: 0;
+  margin-left: -55%;
+}
 .regular-font-group{
-   font-family: Raleway;
-   font-size: 2.5rem;
-   font-weight: lighter;
-   letter-spacing: .2rem;
-   color: #dbaf2b; 
+   font-size: 1.5rem;
+   font-weight:100;
+   letter-spacing: .1rem;
+   color: whitesmoke; 
+  margin: 0%;
+  margin-left: -25%;
+  
 }
 .bold-font-group{
-    font-family:Raleway;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight:bold;
-    letter-spacing: .6rem;
-    color: #dbaf2b; 
+    letter-spacing: .4rem;
+    color: whitesmoke; 
+    margin: -20px;
+   
 }
 
 .Bold-text-titles-Back{
-    font-family: Raleway;
-    font-size: 4rem;
+    
+    font-size: 3rem;
     font-weight: bold;
     letter-spacing: .2rem;
     color: #dbaf2b16; 
@@ -96,18 +107,18 @@ font-size: xx-large;
     position: relative; 
     z-index: 0; 
     margin: 0; 
-    margin-top: 20%;
+    margin-top: 30%;
 }
 .Bold-text-titles{
-    font-family:Raleway;
-    font-size: 2.5rem; 
+   
+    font-size: 1.5rem; 
     font-weight: bolder;
     letter-spacing: .2rem;
     color: #dbaf2b; 
     text-align: center;
     position: relative; 
     z-index: 1; 
-    margin: -60px 0 0 0;
+    margin: -50px 0 0 0;
    
 }
 .aboutMe-Container , .Skills-component-container,.projectsContainer{
@@ -136,22 +147,22 @@ font-size: xx-large;
     margin-left: 20px; 
 }
 .simpleText-format{
-    color: #dbaf2b; 
-    font-family: Raleway;
-   font-size: 2rem;
+    color: whitesmoke; 
+   
+   font-size: 1rem;
    font-weight: lighter;
    letter-spacing: .1rem;
    text-align: center;
 }
 .regular-font-group-messag{
     margin-top: 10%;
-    font-family: Raleway;
-    font-size: 2rem;
+   
+    font-size: 1rem;
     font-weight:lighter;
     letter-spacing: .2rem;
     text-align: center;
-    color: #dbaf2b; 
-    text-shadow: rgba(240,237,231,1) 0px 0px 25px;
+    color: whitesmoke; 
+    
 
 }
 .skills-container {
@@ -172,15 +183,15 @@ font-size: xx-large;
 
 
 .skill-tecnology-logo {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 15%; 
-    opacity: 0.6; 
+    opacity: 0.9; 
     margin-left: -25%;
     
 }
 .Boldtext-titles{
-    font-family: Raleway;
-    font-size: 1.5rem; 
+   
+    font-size: 1rem; 
     font-weight:900;
     letter-spacing: .3rem;
     text-align: center;
@@ -197,7 +208,7 @@ font-size: xx-large;
 }
   
 .single-chart {
-  width: 33%;
+  width: 35%;
   justify-content: space-around;
   margin-top: -20%;
   margin-left: 40%;

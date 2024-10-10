@@ -1,6 +1,7 @@
 body {
     background: radial-gradient(ellipse at bottom, #010211 0%, #010211 100%);
     margin: 0; /*  no default margin */
+    font-family: 'Poppins', sans-serif;
 }
 
 .AppContainer {
