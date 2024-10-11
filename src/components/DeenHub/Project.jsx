@@ -1,0 +1,17 @@
+export default function project (){
+    return(
+        <div>
+         <h1>
+            i'm project component
+        </h1>
+        <div className="project-item-DeenHub">
+            
+            </div>
+    // link to figma 
+    //git repository
+    // link to deployement
+       
+        </div>
+       
+    )
+}

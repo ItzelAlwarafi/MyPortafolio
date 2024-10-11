@@ -1,10 +1,9 @@
 import SideBar from './sideBar'
 import AboutMe from './aboutMe'
-import Projects from './projectsList'
 import Footer from './footer'
 import WelcomePage from ".//welcomePage"
 import Skills from './skills'
-
+import ProjectsList from './ProjectsList'
 
 export default function LandingPage () {
 
@@ -29,7 +28,7 @@ export default function LandingPage () {
                 <Skills/>
             </div>
             <div className='projectsContainer'>
-                <Projects/>
+                <ProjectsList/>
             </div>
         </div>
         </div>
