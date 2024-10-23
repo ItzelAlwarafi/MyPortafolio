@@ -11,14 +11,9 @@ export default function ProjectsList() {
                     <div 
                         className="project-item-container" 
                         key={project.projectName} 
-                        style={{ backgroundImage: `url(${project.projectBackround})` }}
+                        style={{ backgroundImage: `url(${project.projectBackground})` }}
                     >
                         <div className="Project-Details-container">
-                            <img 
-                                src={project.projectLogo} 
-                                alt={`${project.projectName} logo`} 
-                                className="project-item-logo" 
-                            />
                             <h1 className="project-name">{project.projectName}</h1>
                         </div>
                         <div className="project-description-card-container">
@@ -30,11 +25,16 @@ export default function ProjectsList() {
                             >
                                 <FaGithub />
                             </a>
-                           
-                            <p className="project-description-card"> {project.projectDesc}</p>
+                            <p className="project-description-card">{project.projectDesc}</p>
+                            <div className="technologies-container">
+                                {project.technologies.map((tech) => (
+                                    <span key={tech} className="technology-bubble">
+                                        {tech} 
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
-                    
                 ))}
             </div>
         </div>
