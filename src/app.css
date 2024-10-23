@@ -1,4 +1,6 @@
 
+
+
 .pagecontainerbox{
   display: flex;
   flex-direction: column;
@@ -96,6 +98,7 @@ font-size: xx-large;
     margin: -20px;
    
 }
+
 
 .Bold-text-titles-Back{
     
@@ -392,7 +395,7 @@ color:#DBAF2B;
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 866px) {
 
   .icon-sideBar {
     display: flex;
@@ -651,4 +654,78 @@ display: none;
       margin: 5px; /* Increased margisn for spacing */
       display: inline-block; /* Ensures the bubbles display inline */
   }
+}
+
+@media only screen and (min-width: 866px) and (max-width: 1377px){
+
+  .welcome-page-container {
+    position: relative; 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    justify-content: space-around;
+    color: #DBAF2B;
+    overflow: hidden; 
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 10%;
+   
+    
+}
+
+.welcome-page-container::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+  
+    
+}
+
+.welcome-page-container > * {
+    position: relative; /* Ensure child elements are above the overlay */
+    z-index: 1; /* Keep text elements above the overlay */
+}
+
+.intro-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+
+.regular-font-hello{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  letter-spacing: .1rem;
+  margin: 0;
+  margin-left: -42%;
+}
+.regular-font-group{
+   font-size: 1.5rem;
+   font-weight:100;
+   letter-spacing: .1rem;
+   color: whitesmoke; 
+  margin: 0%;
+  margin-left: -25%;
+  
+}
+.bold-font-group{
+    font-size: 4rem;
+    font-weight:bold;
+    letter-spacing: .4rem;
+    color: whitesmoke; 
+    margin: -20px;
+   
+}
+
+
 }
