@@ -148,7 +148,6 @@ font-size: xx-large;
 }
 .simpleText-format{
     color: whitesmoke; 
-   
    font-size: 1rem;
    font-weight: lighter;
    letter-spacing: .1rem;
@@ -156,7 +155,6 @@ font-size: xx-large;
 }
 .regular-font-group-messag{
     margin-top: 10%;
-   
     font-size: 1rem;
     font-weight:lighter;
     letter-spacing: .2rem;
@@ -311,45 +309,331 @@ font-size: xx-large;
 
 }
 .footer-text{
-    font-family: Raleway;
     font-weight:lighter;
     font-size:large;
+    font-weight: 400;
     letter-spacing: 2px;
 }
 
 .projects-cards-container {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-  width: 100%;
-  height: auto;
-
-}
-.project-item-container{
+  margin-top: 20%;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
- margin: 2%;
-  background-image: url('/deenhub.jpg'); 
+  align-items: flex-start; /* Align items to the start */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  width: 100%;
+  height: auto;
+  gap: 20px; /* Optional: Adds space between items */
+}
+
+.project-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Space out children */
+  height: 100%; /* Ensure it takes full height */
+  position: relative; /* For any absolute children */
+  margin: 1%; /* Adjust as needed */
   background-size: cover; 
   background-position: center; 
-  width: 50%; 
-   height: 300px;
-   border-radius: 20px;
+  width: calc(45% - 10px); /* Adjust width to account for margins and gaps */
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+.Project-Details-container{
+  flex-grow: 1; /* Allow this section to take up available space */
+  display: flex;
+  flex-direction:row; /* Arrange children vertically */
+  justify-content: center; /* Align children to the bottom */
+ align-items: center;
+
+}
+.project-name{
+font-size: 3rem;
+font-style: italic;
+color: #010211;
+
+}
+.project-item-logo{
+  width: 4rem;
+  height: 4rem;
+  
+}
+.project-link-gitHub-repo{
+  font-size: 2rem;
+  margin-left: 5%;
+  text-decoration:none ;
+  color: #DBAF2B;
+}
+.project-description-card{
+  font-size: 1rem;
+  margin-left: 5%;
  
 }
+.project-description-card-container {
+  display: none; 
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white; 
 
-.project-title{
-font-size: 3rem;
-color: #6750A4;
+ 
+}
+.project-item-container:hover .project-description-card-container {
+  display: block; 
+ 
 
 }
-.logo{
-  width: 4rem;
+
+@media (max-width: 768px) {
+
+  .icon-sideBar {
+    display: flex;
+    text-align: center;
+    margin: 1rem; 
+    font-size: large;
+    color:#DBAF2B
 }
-.project-link{
-  text-decoration:none ;
+
+
+
+
+  .welcome-page-container {
+    position: relative; 
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+    justify-content: space-around;
+    color: #DBAF2B;
+    overflow: hidden; 
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  .welcome-page-container::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; 
+  
+    
+}
+.welcome-page-container > * {
+  position: relative; /* Ensure child elements are above the overlay */
+  z-index: 1; /* Keep text elements above the overlay */
+}
+  .intro-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+     
+  }
+  .regular-font-hello{
+    font-size: .8rem;
+    font-weight: lighter;
+    letter-spacing: .1rem;
+     margin-bottom: 5%;
+  
+  }
+  .bold-font-group{
+    font-size: 1.3rem;
+    font-weight:bold;
+    letter-spacing: .4rem;
+    color: whitesmoke; 
+    margin-top: -15px;
+    margin-bottom: 2px;
+   
+  }
+  .regular-font-group{
+    font-size:.5rem;
+    font-weight:100;
+    letter-spacing: .1rem;
+    color: whitesmoke; 
+    margin-bottom: 5%;
+  
+   
+ }
+
+  .Bold-text-titles-Back{
+    
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    color: #dbaf2b16; 
+    text-align: center;
+    position: relative; 
+    z-index: 0; 
+    margin: 0; 
+  }
+  .Bold-text-titles{
+   
+    font-size: 1rem; 
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    color: #dbaf2b; 
+    text-align: center;
+    position: relative; 
+    z-index: 1; 
+    margin: -35px 0 0 0;
+   
+}
+.aboutMe-Container , .Skills-component-container,.projectsContainer{
+  margin-top: 20%;
+  width: 100%;
+
+}
+.aboutMe-picture-statement-container {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row; /* Change to row to align items side by side */
+justify-content: center;
+}
+
+
+.profile-picture {
+  display: none;
+  
+}
+.Personal-Statement {
+  width: 100%;
+  margin-left: 20px; 
+}
+.simpleText-format{
+  color: whitesmoke; 
+ font-size: .8rem;
+ font-weight: lighter;
+ letter-spacing: .1rem;
+ text-align: center;
+}
+.regular-font-group-messag{
+  margin-top: 10%;
+  font-size: .8rem;
+  font-weight:lighter;
+  letter-spacing: .2rem;
+  text-align: center;
+  color: whitesmoke; 
+
+
+}
+.skills-container {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping if items overflow */
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Add space between skill items */
+}
+
+.Boldtext-titles {
+display: none;
+}
+
+.skill-tecnology-logo {
+  font-size: 2rem;
+  margin-top: 5px; /* Ensure there is some space between title and icon */
+  margin-left: -3px;
+}
+
+.single-chart {
+  display: none;
+}
+.project-list-container{
+    
+  margin-bottom: 30%;
+
+}
+  .footer-text {
+      font-size: small; /* Adjust footer text size */
+  }
+
+  .projects-cards-container {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    width: 100%;
+    height: auto;
+    gap: 20px; /* Optional: Adds space between items */
+   
+  }
+  .project-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Space out children */
+    height: 100%; /* Ensure it takes full height */
+    position: relative; /* For any absolute children */
+    margin: 1%; /* Adjust as needed */
+    background-size: cover; 
+    background-position: center; 
+    width: calc(45% - 10px); /* Adjust width to account for margins and gaps */
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .Project-Details-container{
+    flex-grow: 1; /* Allow this section to take up available space */
+    display: flex;
+    flex-direction:row; /* Arrange children vertically */
+    justify-content: center; /* Align children to the bottom */
+   align-items: center;
+  
+  }
+  .project-name{
+    font-size: 1rem;
+    font-style: italic;
+    color: #010211;
+   
+
+    
+    }
+    .project-item-logo{
+      width: 2rem;
+      height: 2rem;
+      
+    }
+    .project-link-gitHub-repo{
+      font-size: 1rem;
+      text-decoration:none ;
+      color: #DBAF2B;
+    }
+    .project-description-card{
+      font-size: .5rem;
+      margin-left: 5%;
+     
+    }
+    .project-description-card-container {
+      display: flex; 
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white; 
+     
+     
+      
+    
+     
+    }
+   
 }

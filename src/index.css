@@ -17,7 +17,6 @@ body {
     display: flex;
     flex-direction: column; 
     flex: 1; /* Allows this to grow */
-    
     width: 75%;
     padding-bottom: 50px; /* Space for the footer */
 }
@@ -39,4 +38,45 @@ body {
     bottom: 0;
     width: 100%;
    
+}
+@media (max-width: 768px) {
+    body {
+        background: radial-gradient(ellipse at bottom, #010211 0%, #010211 100%);
+        margin: 0; /*  no default margin */
+        font-family: 'Poppins', sans-serif;
+    }
+
+.sideBar {
+    height: 100%; 
+    width: 5%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+    .AppContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        min-height: 100vh; /*  container takes the full height of the viewport */
+        position: relative; /* Allows positioning of children */
+    }
+
+    .AppContentContainer {
+        display: flex;
+        flex-direction: column; 
+        flex: 1; /* Allows this to grow */
+        width: 90%;
+        padding-bottom: 50px; /* Space for the footer */
+    }
+
+    .footer {
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        width: 100%;
+       
+    }
 }

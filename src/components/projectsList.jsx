@@ -1,33 +1,42 @@
-import { Link } from "react-router-dom"
 import { FaGithub } from "react-icons/fa"
+import projects from './ProjectsData'
 
-export default function ProjectsList () {
-    return(
+export default function ProjectsList() {
+    return (
         <div className="project-list-container">
-       <h1 className="Bold-text-titles-Back">PROJECTS </h1>
-            <h1 className="Bold-text-titles">PROJECTS </h1>
-            {/* <Link to="/project" className="project-link" id="home-menu-icon"> */}
+            <h1 className="Bold-text-titles-Back">PROJECTS</h1>
+            <h1 className="Bold-text-titles">PROJECTS</h1>
             <div className="projects-cards-container">
-            <div className="project-item-container">
-        <img className="logo" src="DeenHubsvg.svg"></img>
-            <h1 className="project-title"> DeenHub</h1>
-            <a href="http://website-13976b47.eki.srw.mybluehost.me" className="icon-sideBar">
-        <FaGithub />
-       </a>
+                {projects.map((project) => (
+                    <div 
+                        className="project-item-container" 
+                        key={project.projectName} 
+                        style={{ backgroundImage: `url(${project.projectBackround})` }}
+                    >
+                        <div className="Project-Details-container">
+                            <img 
+                                src={project.projectLogo} 
+                                alt={`${project.projectName} logo`} 
+                                className="project-item-logo" 
+                            />
+                            <h1 className="project-name">{project.projectName}</h1>
+                        </div>
+                        <div className="project-description-card-container">
+                            <a 
+                                href={project.githubPath} 
+                                className="project-link-gitHub-repo" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                            >
+                                <FaGithub />
+                            </a>
+                           
+                            <p className="project-description-card"> {project.projectDesc}</p>
+                        </div>
+                    </div>
+                    
+                ))}
+            </div>
         </div>
-        <div className="project-item-container">
-        <img className="logo" src="DeenHubsvg.svg"></img>
-            <h1 className="project-title"> DeenHub</h1>
-            <a href="http://website-13976b47.eki.srw.mybluehost.me" className="icon-sideBar">
-        <FaGithub />
-       </a>
-        </div>
-        </div>
-                {/* </Link> */}
-       
-
-
-            
-       </div> 
     )
 }
