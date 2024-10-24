@@ -17,7 +17,7 @@ const projects = [
         projectName: 'Tessera',
         githubPath: 'https://github.com/ItzelAlwarafi/Tessera',
         projectLogo: 'public/Tessera_icon.png',
-        projectBackground: 'public/tessera.jpg',
+        projectBackground: '/tessera.jpg',
         projectDesc: 'Tessera is a collaborative web application developed by our team to streamline the ticket purchasing process for various events. Designed to enhance user experience, Tessera allows users to discover and buy tickets for concerts, festivals, workshops, and more, all in one place.',
         technologies: [
             'JavaScript',
@@ -49,10 +49,8 @@ const projects = [
         projectDesc: 'ICM Library is a project I developed to assist my local mosque in effectively managing their library system. The application provides a streamlined solution for organizing books, tracking inventory, and managing the borrowing process for community members.',
         technologies: [
             'JavaScript',
-            'React',
             'HTML',
             'CSS',
-            'Node.js'
         ]
     }
 ]

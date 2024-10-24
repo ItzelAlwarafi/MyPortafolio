@@ -10,7 +10,7 @@ export default function aboutMe (){
             <h1 className="Bold-text-titles">ABOUT ME </h1>
        
        <div className="aboutMe-picture-statement-container">
-       <img src="public/profilepic.jpeg" alt="Profile" className="profile-picture" />
+       <img src="/profile.jpeg" alt="Profile" className="profile-picture" />
         <div className="Personal-Statement">
             <p className="simpleText-format">I’m a passionate developer dedicated to crafting seamless user experiences 
                 and robust back-end solutions. I thrive on collaboration and 

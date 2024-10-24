@@ -15,21 +15,22 @@ export default function ProjectsList() {
                     >
                         <div className="Project-Details-container">
                             <h1 className="project-name">{project.projectName}</h1>
-                        </div>
-                        <div className="project-description-card-container">
                             <a 
                                 href={project.githubPath} 
                                 className="project-link-gitHub-repo" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
+                               
                             >
                                 <FaGithub />
                             </a>
+                        </div>
+                        <div className="project-description-card-container">
+                           
                             <p className="project-description-card">{project.projectDesc}</p>
                             <div className="technologies-container">
                                 {project.technologies.map((tech) => (
                                     <span key={tech} className="technology-bubble">
                                         {tech} 
+                                        
                                     </span>
                                 ))}
                             </div>
